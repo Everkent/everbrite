@@ -6,270 +6,146 @@
 -->
 <html>
 	<head>
-		<title>Everbrite - Industrial Cleaning Solutions</title>
+		<title>Everbrite by TEMPLATED</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Professional industrial cleaning services including rust removal, rope access, and eco-friendly solutions" />
-		<meta name="keywords" content="industrial cleaning, rust removal, rope access, eco-friendly cleaning, surface preparation" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
 		<style>
-			/* Base styles */
-			body {
-				font-size: 16px;
-				line-height: 1.6;
-			}
-			
-			.container {
-				width: 100%;
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 15px;
-				box-sizing: border-box;
-			}
-			
-			/* Header and logo fixes */
-			#header {
-				position: relative;
-				padding: 15px 0;
-			}
-			
-			#logo {
-				text-align: center;
-				padding: 10px 0;
-			}
-			
-			#logo h1 {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				margin: 0 0 10px 0;
-			}
-			
-			#logo h1 a {
-				display: flex;
-				align-items: center;
-				text-decoration: none;
-				color: inherit;
-				flex-direction: column;
-			}
-			
-			#logo img {
-				height: 80px;
-				width: auto;
-				margin-bottom: 10px;
-			}
-			
-			#logo .tag {
-				text-align: center;
-				margin-top: 5px;
-				font-size: 16px;
-			}
-			
-			/* Top left corner logo */
-			.corner-logo {
-				position: absolute;
-				top: 15px;
-				left: 15px;
-				height: 40px;
-				width: auto;
-				z-index: 100;
-			}
-			
-			/* Navigation */
-			#nav-wrapper {
-				margin: 10px 0;
-			}
-			
-			#nav ul {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				padding: 0;
-				margin: 0;
-			}
-			
-			#nav ul li {
-				margin: 5px 10px;
-			}
-			
-			/* Featured section */
-			#featured {
-				padding: 30px 0;
+			/* Mobile responsiveness fixes */
+			@media (max-width: 768px) {
+				#logo h1 {
+					height: auto;
+					flex-direction: column;
+					text-align: center;
+					padding: 10px 0;
+				}
+				#logo img {
+					position: relative;
+					left: 0;
+					margin: 0 auto 15px auto;
+					height: 80px;
+					display: block;
+				}
+				#featured .row {
+					flex-direction: column;
+				}
+				#featured section {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+				#main .row {
+					flex-direction: column;
+				}
+				#main section {
+					width: 100%;
+					margin-bottom: 30px;
+					min-height: auto;
+				}
+				.corner-logo {
+					height: 35px;
+					top: 10px;
+					left: 10px;
+				}
+				#nav ul {
+					flex-direction: column;
+					padding: 10px;
+				}
+				#nav ul li {
+					margin: 5px 0;
+				}
+				#logo .tag {
+					margin-top: 5px;
+				}
 			}
 			
 			#featured .row {
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: center;
-				margin: 0 -10px;
 			}
-			
 			#featured section {
-				flex: 1 1 300px;
-				margin: 15px 10px;
-				padding: 20px;
-				box-sizing: border-box;
-				min-width: 280px;
-				background: #f9f9f9;
-				border-radius: 5px;
-			}
-			
-			#featured section .button {
-				margin-top: 15px;
-				align-self: flex-start;
-			}
-			
-			/* Main content */
-			#main {
-				padding: 30px 0;
-			}
-			
-			#main .row {
 				display: flex;
-				flex-wrap: wrap;
-				margin: 0 -10px;
+				flex-direction: column;
+				flex: 1;
+				min-width: 250px;
+				margin: 10px;
 			}
-			
-			#main section {
-				flex: 1 1 400px;
-				margin: 15px 10px;
-				padding: 0;
-				box-sizing: border-box;
+			#featured section .button {
+				margin-top: auto;
 			}
-			
+			#logo {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			#logo h1 {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 15px;
+				height: 120px;
+			}
+			#logo img {
+				position: absolute;
+				left: -140px;
+				height: 120px;
+				width: auto;
+				object-fit: contain;
+			}
+			#logo h1 a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: inherit;
+			}
+			#logo .tag {
+				text-align: center;
+				margin-top: -10px;
+			}
+			/* Top left corner logo */
+			#header {
+				position: relative;
+			}
+			.corner-logo {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				height: 40px;
+				width: auto;
+				z-index: 100;
+			}
+			/* Main content image dimensions */
 			.image.full {
 				display: block;
 				width: 100%;
+				min-height: 89px;
 				height: auto;
-				margin-bottom: 15px;
 			}
-			
 			.image.full img {
 				width: 100%;
 				height: auto;
+				min-height: 89px;
 				object-fit: cover;
-				border-radius: 5px;
 			}
-			
-			/* Tweet section */
-			#tweet {
-				padding: 30px 0;
-				background: #f5f5f5;
+			/* Ensure consistent section heights */
+			#main section {
+				min-height: 400px;
 			}
-			
-			blockquote {
-				font-size: 18px;
-				line-height: 1.5;
-				margin: 0;
-				padding: 0 20px;
-				text-align: center;
+			#main .row {
+				display: flex;
+				flex-wrap: wrap;
 			}
-			
-			/* Footer */
-			#footer {
-				padding: 30px 0;
-			}
-			
-			#footer .container {
-				text-align: center;
-			}
-			
-			/* Copyright */
-			#copyright {
-				padding: 20px 0;
-				text-align: center;
-				font-size: 14px;
-			}
-			
-			/* Mobile responsiveness */
-			@media (max-width: 768px) {
-				body {
-					font-size: 14px;
-				}
-				
-				.container {
-					padding: 0 10px;
-				}
-				
-				#logo h1 {
-					flex-direction: column;
-				}
-				
-				#logo img {
-					height: 60px;
-					margin: 0 auto 10px auto;
-					position: relative;
-					left: 0;
-				}
-				
-				.corner-logo {
-					height: 30px;
-					top: 10px;
-					left: 10px;
-				}
-				
-				#nav ul {
-					flex-direction: column;
-					align-items: center;
-				}
-				
-				#nav ul li {
-					margin: 5px 0;
-					width: 100%;
-					text-align: center;
-				}
-				
-				#featured section,
-				#main section {
-					flex: 1 1 100%;
-					margin: 10px 0;
-				}
-				
-				#featured .row,
-				#main .row {
-					margin: 0;
-				}
-				
-				h2 {
-					font-size: 22px;
-				}
-				
-				h3 {
-					font-size: 18px;
-				}
-				
-				blockquote {
-					font-size: 16px;
-					padding: 0 10px;
-				}
-				
-				#logo .tag {
-					font-size: 14px;
-				}
-			}
-			
-			@media (max-width: 480px) {
-				#logo img {
-					height: 50px;
-				}
-				
-				.corner-logo {
-					height: 25px;
-				}
-				
-				h2 {
-					font-size: 20px;
-				}
-				
-				#featured section,
-				#main section {
-					padding: 15px;
-				}
+			#main section {
+				flex: 1;
+				min-width: 300px;
+				margin: 10px;
 			}
 		</style>
 		<noscript>
@@ -312,14 +188,13 @@
 				<header>
 					<h2>Welcome to Everbrite</h2>
 				</header>
-				<p>At <strong>Everbrite</strong>, we believe that every surface deserves to shine and every structure deserves to last. We specialize in industrial cleaning solutions that restore, protect, and extend the life of your assets. From rust removal on heavy machinery to high-level rope access cleaning, our team is equipped with the skills, technology, and dedication to handle the toughest jobs.</p>
-				<p>We proudly serve mines, steelworks, factories, and commercial sites, delivering services that combine industrial strength with environmentally responsible practices. With Everbrite, you can count on safety, reliability, and results that last.</p>
+				<p>At <strong>Everbrite</strong>, we believe that every surface deserves to shine and every structure deserves to last. We specialize in industrial cleaning solutions that restore, protect, and extend the life of your assets. From rust removal on heavy machinery to high-level rope access cleaning, our team is equipped with the skills, technology, and dedication to handle the toughest jobs. We proudly serve mines, steelworks, factories, and commercial sites, delivering services that combine industrial strength with environmentally responsible practices. With Everbrite, you can count on safety, reliability, and results that last.</p>
 				<hr />
 				<header>
-					<h2>Our Services</h2>
+					<h2>Services</h2>
 				</header>
 				<div class="row">
-					<section>
+					<section class="3u">
 						<span class="pennant"><span class="fa fa-briefcase"></span></span>
 						<h3>Industrial Rust & Steel Cleaning</h3>
 						<ul>
@@ -329,7 +204,7 @@
 						</ul>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
-					<section>
+					<section class="3u">
 						<span class="pennant"><span class="fa fa-lock"></span></span>
 						<h3>Rope Access & High-Level Cleaning</h3>
 						<ul>
@@ -339,7 +214,7 @@
 						</ul>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
-					<section>
+					<section class="3u">
 						<span class="pennant"><span class="fa fa-globe"></span></span>
 						<h3>General Industrial Cleaning</h3>
 						<ul>
@@ -349,7 +224,7 @@
 						</ul>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
-					<section>
+					<section class="3u">
 						<span class="pennant"><span class="fa fa-leaf"></span></span>
 						<h3>Eco-Friendly Solutions</h3>
 						<ul>
@@ -365,16 +240,17 @@
 
 	<!-- Main -->
 		<div id="main">
-			<div class="container">
+			<div id="content" class="container">
+
 				<div class="row">
-					<section>
+					<section class="6u">
 						<a href="#" class="image full"><img src="images/pic01.jpg" alt="Industrial cleaning service"></a>
 						<header>
 							<h2>Industrial Cleaning Excellence</h2>
 						</header>
 						<p>Our team of experts specializes in industrial cleaning solutions that restore, protect, and extend the life of your assets. From rust removal to high-level access cleaning, we deliver results that last.</p>
 					</section>				
-					<section>
+					<section class="6u">
 						<a href="#" class="image full"><img src="images/pic03.jpg" alt="Rope access cleaning"></a>
 						<header>
 							<h2>Rope Access Specialists</h2>
@@ -384,14 +260,14 @@
 				</div>
 
 				<div class="row">
-					<section>
+					<section class="6u">
 						<a href="#" class="image full"><img src="images/pic04.jpg" alt="Eco-friendly cleaning"></a>
 						<header>
 							<h2>Eco-Friendly Solutions</h2>
 						</header>
 						<p>We utilize non-toxic cleaning methods and water-efficient blasting options to provide sustainable practices that protect both your people and the environment.</p>
 					</section>				
-					<section>
+					<section class="6u">
 						<a href="#" class="image full"><img src="images/pic02.jpg" alt="Surface preparation"></a>
 						<header>
 							<h2>Surface Preparation</h2>
@@ -399,6 +275,7 @@
 						<p>Professional surface preparation for coatings and repainting. We ensure proper adhesion and longevity for your protective coatings through meticulous cleaning processes.</p>
 					</section>				
 				</div>
+			
 			</div>
 		</div>
 
