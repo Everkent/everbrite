@@ -10,18 +10,63 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
 		<style>
+			/* Mobile responsiveness fixes */
+			@media (max-width: 768px) {
+				#logo h1 {
+					height: auto;
+					flex-direction: column;
+					text-align: center;
+				}
+				#logo img {
+					position: relative;
+					left: 0;
+					margin-bottom: 15px;
+				}
+				#featured .row {
+					flex-direction: column;
+				}
+				#featured section {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+				#main .row {
+					flex-direction: column;
+				}
+				#main section {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+				.corner-logo {
+					height: 35px;
+					top: 10px;
+					left: 10px;
+				}
+				#nav ul {
+					flex-direction: column;
+					padding: 10px;
+				}
+				#nav ul li {
+					margin: 5px 0;
+				}
+			}
+			
 			#featured .row {
 				display: flex;
+				flex-wrap: wrap;
 			}
 			#featured section {
 				display: flex;
 				flex-direction: column;
+				flex: 1;
+				min-width: 250px;
+				margin: 10px;
 			}
 			#featured section .button {
 				margin-top: auto;
@@ -42,7 +87,7 @@
 			}
 			#logo img {
 				position: absolute;
-				left: -140px; /* Position logo to the left of the centered text */
+				left: -140px;
 				height: 120px;
 				width: auto;
 				object-fit: contain;
@@ -69,13 +114,6 @@
 				width: auto;
 				z-index: 100;
 			}
-			@media (max-width: 768px) {
-				.corner-logo {
-					height: 45px;
-					top: 15px;
-					left: 15px;
-				}
-			}
 			/* Main content image dimensions */
 			.image.full {
 				display: block;
@@ -92,6 +130,15 @@
 			/* Ensure consistent section heights */
 			#main section {
 				min-height: 400px;
+			}
+			#main .row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#main section {
+				flex: 1;
+				min-width: 300px;
+				margin: 10px;
 			}
 		</style>
 		<noscript>
