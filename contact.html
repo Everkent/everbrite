@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Contact Us - Everbrite</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Contact Everbrite for industrial cleaning services. Get in touch for quotes and consultations." />
+		<meta name="keywords" content="contact, industrial cleaning, quote, consultation, cleaning services" />
+		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<style>
+			.contact-form {
+				margin-top: 30px;
+			}
+			.form-group {
+				margin-bottom: 20px;
+			}
+			.form-group label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+			.form-group input, 
+			.form-group textarea, 
+			.form-group select {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				font-family: 'Roboto', sans-serif;
+			}
+			.form-group textarea {
+				min-height: 120px;
+				resize: vertical;
+			}
+			.button {
+				background-color: #4CAF50;
+				color: white;
+				padding: 12px 24px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.button:hover {
+				background-color: #45a049;
+			}
+			.required {
+				color: #ff0000;
+			}
+			/* Logo styling from homepage */
+			#logo {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			#logo h1 {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 15px;
+				height: 120px;
+			}
+			#logo img {
+				position: absolute;
+				left: -140px; /* Position logo to the left of the centered text */
+				height: 120px;
+				width: auto;
+				object-fit: contain;
+			}
+			#logo h1 a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: inherit;
+			}
+			#logo .tag {
+				text-align: center;
+				margin-top: -10px;
+			}
+			/* Top left corner logo */
+			#header {
+				position: relative;
+			}
+			.corner-logo {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				height: 40px;
+				width: auto;
+				z-index: 100;
+			}
+			@media (max-width: 768px) {
+				.corner-logo {
+					height: 45px;
+					top: 15px;
+					left: 15px;
+				}
+				#logo img {
+					position: static;
+					margin-right: 10px;
+					height: 80px;
+				}
+				#logo h1 {
+					flex-direction: column;
+					height: auto;
+				}
+			}
+		</style>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+
+	<!-- Header -->
+		<div id="header">
+			<!-- Top left corner logo -->
+			<img src="images/logo2.png" alt="Logo" class="corner-logo">
+			
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about-us.html">About Us</a></li>
+						<li class="active"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#"><img src="images/logo1.png" alt="Everbrite Logo">Everbrite</a></h1>
+					<span class="tag">Precision Cleaning, Industrial Excellence</span>
+				</div>
+			</div>
+		</div>
+	<!-- Header --> 
+
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row">
+
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Contact Everbrite</h2>
+								<span class="byline">Get in touch with our team for industrial cleaning solutions</span>
+							</header>
+							
+							<div class="contact-form">
+								<form action="https://formsubmit.co/your-email@everbrite.com" method="POST">
+									<!-- FormSubmit.co configuration -->
+									<input type="hidden" name="_subject" value="New Contact Form Submission from Everbrite Website">
+									<input type="hidden" name="_template" value="table">
+									<input type="hidden" name="_captcha" value="false">
+									<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+									
+									<div class="form-group">
+										<label for="name">Full Name <span class="required">*</span></label>
+										<input type="text" id="name" name="name" required>
+									</div>
+									
+									<div class="form-group">
+										<label for="email">Email Address <span class="required">*</span></label>
+										<input type="email" id="email" name="email" required>
+									</div>
+									
+									<div class="form-group">
+										<label for="phone">Phone Number</label>
+										<input type="tel" id="phone" name="phone">
+									</div>
+									
+									<div class="form-group">
+										<label for="company">Company Name</label>
+										<input type="text" id="company" name="company">
+									</div>
+									
+									<div class="form-group">
+										<label for="service">Service Interested In</label>
+										<select id="service" name="service">
+											<option value="">Select a service</option>
+											<option value="Industrial Rust & Steel Cleaning">Industrial Rust & Steel Cleaning</option>
+											<option value="Rope Access & High-Level Cleaning">Rope Access & High-Level Cleaning</option>
+											<option value="General Industrial Cleaning">General Industrial Cleaning</option>
+											<option value="Eco-Friendly Solutions">Eco-Friendly Solutions</option>
+											<option value="Multiple Services">Multiple Services</option>
+											<option value="Not Sure">Not Sure - Need Consultation</option>
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<label for="message">Message <span class="required">*</span></label>
+										<textarea id="message" name="message" placeholder="Please describe your cleaning needs, project details, or any specific requirements..." required></textarea>
+									</div>
+									
+									<div class="form-group">
+										<button type="submit" class="button">Send Message</button>
+									</div>
+								</form>
+							</div>
+						</section>
+					</div>
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>Contact Information</h2>
+							</header>
+							<div class="contact-info">
+								<p><strong>Address:</strong><br>
+								100 Pudding Stone Rd<br>
+								Louwlardia, Centurion, 0157</p>
+								
+								<p><strong>Phone:</strong><br>
+								+27 (063) 862-0759</p>
+								
+								<p><strong>Email:</strong><br>
+								info@everbrite.com</p>
+								
+								<p><strong>Business Hours:</strong><br>
+								Monday-Friday: 8:00 AM - 6:00 PM<br>
+								Saturday: 9:00 AM - 2:00 PM<br>
+								Sunday: Closed
+								Public Holiday: Closed</p>
+							</div>
+						</section>
+						<section>
+							<header>
+								<h2>Emergency Service</h2>
+							</header>
+							<p>For urgent industrial cleaning needs or emergency situations, call our 24/7 hotline:</p>
+							<p><strong>Emergency Line:</strong><br>
+							+1 (555) 911-CLEAN</p>
+							<p>Our rapid response team is available around the clock for critical situations.</p>
+						</section>
+						<section>
+							<header>
+								<h2>Service Areas</h2>
+							</header>
+							<ul class="default">
+								<li>Metropolitan Area</li>
+								<li>Industrial Districts</li>
+								<li>Commercial Zones</li>
+								<li>Regional Coverage</li>
+								<li>National Projects</li>
+							</ul>
+						</section>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	<!-- /Main -->
+
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo;Everbrite's responsive team addressed our emergency cleaning needs within hours. Their professionalism and expertise saved us significant downtime.&rdquo; - Manufacturing Plant Manager</blockquote>
+				</section>
+			</div>
+		</div>
+	<!-- /Tweet -->
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>Get in touch</h2>
+						<span class="byline">Ready to discuss your industrial cleaning needs? We're here to help.</span>
+					</header>
+					<ul class="contact">
+						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+						<li><a href="mailto:info@everbrite.com" class="fa fa-envelope"><span>Email</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> | Content: Everbrite Industrial Services © 2023
+			</div>
+		</div>
+
+	</body>
+</html>
